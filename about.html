@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>About Us | Mobiltronik</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+		<div class="container">
+	<div class="navbar">
+		<div class="logo">
+			<img src="img/MT.png" width="175px">
+		</div>
+		<nav>
+			<ul id="menuitem">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li class="active"><a href="about.html">About Us</a></li>
+				<li class="active"><a href="produk.html">Product</a></li>
+				<li class="active"><a href="order.html">How To Order</a></li>
+				<li class="active"><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<img src="img/cart.png" width="30px" height="30px">
+		<img src="img/bar.png" class="menu" onclick="menutoggle()">
+	</div>	
+	</div>
+	<div class="about">
+		<div class="inner">
+			<h1>About Us</h1>
+			<p class="text">
+				Kami Mobiltronik siap menyediakan keperluan audio untuk mobil anda. Kami menyediakan berbagai macam merk Speaker dan HeadUnit. Selain menyediakan berbagai macam unit kami juga menyediakan jasa instalasi untuk anda, jadi anda tidak perlu repot untuk menginstalnya sendiri.  
+			</p>
+			<h2>Profil Singkat Mobiltronik</h2>
+			<video controls>
+				<source src="vid/video.mp4" type="video/mp4">
+			</video>
+		</div>
+	</div>
+
+	<!-- footer -->
+<div class="footer">
+	<div class="container">
+		<div class="baris">
+			<div class="footer1">
+				<h3>Terima Kasih Telah Berkunjung di Web Kami!</h3>
+			</div>
+			<div class="footer2">
+				<img src="img/MT.png">
+			</div>
+		</div>
+		<hr>
+		<p class="cr">Copyright 2021 - Mobiltronik Jakarta</p>
+	</div>
+</div>
+
+<!-- toggle menu -->
+<script>
+	var menuitem = document.getElementById("menuitem");
+
+	menuitem.style.maxHeight = "0px";
+
+	function menutoggle()
+	{
+		if(menuitem.style.maxHeight == "0px")
+		{
+		  menuitem.style.maxHeight = "200px"
+		}
+		else
+		{
+			menuitem.style.maxHeight = "0px"
+		}
+	}
+</script>
+</body>

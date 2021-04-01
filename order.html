@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Mobiltronik | Ecommerce</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="header"> 
+	<div class="container">
+	<div class="navbar">
+		<div class="logo">
+			<img src="img/MT.png" width="175px">
+		</div>
+		<nav>
+			<ul id="menuitem">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li class="active"><a href="about.html">About Us</a></li>
+				<li class="active"><a href="produk.html">Product</a></li>
+				<li class="active"><a href="order.html">How To Order</a></li>
+				<li class="active"><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<img src="img/cart.png" width="30px" height="30px">
+		<img src="img/bar.png" class="menu" onclick="menutoggle()">
+	</div>
+
+	<div class="gbr">
+		<h1>1. Pilih Produk yang Diinginkan di Products</h1><br>
+		<img src="img/Order/2.png" width="100%">
+		<br>
+		<h1>2. Pilih Kuantitas yang Diinginkan dan Klik Tombol "Add To Cart"</h1><br>
+		<img src="img/Order/1.png" width="100%">
+		<br>
+		<h1>3. Silahkan Checkout Barang Yang Sudah Anda Pesan!</h1><br>
+		<img src="img/Order/3.png" width="100%">
+	</div>
+
+<!-- footer -->
+<div class="footer">
+	<div class="container">
+		<div class="baris">
+			<div class="footer1">
+				<h3>Terima Kasih Telah Berkunjung di Web Kami!</h3>
+			</div>
+			<div class="footer2">
+				<img src="img/MT.png">
+			</div>
+		</div>
+		<hr>
+		<p class="cr">Copyright 2021 - Mobiltronik Jakarta</p>
+	</div>
+</div>
+
+<!-- toggle menu -->
+<script>
+	var menuitem = document.getElementById("menuitem");
+
+	menuitem.style.maxHeight = "0px";
+
+	function menutoggle()
+	{
+		if(menuitem.style.maxHeight == "0px")
+		{
+		  menuitem.style.maxHeight = "200px"
+		}
+		else
+		{
+			menuitem.style.maxHeight = "0px"
+		}
+	}
+</script>
+
+</body>
+</html>

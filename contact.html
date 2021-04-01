@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Mobiltronik | Ecommerce</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+ 	<div class="navbar">
+		<div class="logo">
+			<img src="img/MT.png" width="175px">
+		</div>
+		<nav>
+			<ul id="menuitem">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li class="active"><a href="about.html">About Us</a></li>
+				<li class="active"><a href="produk.html">Product</a></li>
+				<li class="active"><a href="order.html">How To Order</a></li>
+				<li class="active"><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<img src="img/cart.png" width="30px" height="30px">
+		<img src="img/bar.png" class="menu" onclick="menutoggle()">
+	</div>
+
+
+	<div class="ktk">
+	<h1>Feel Free to Contact Us!</h1>
+	<br><br><br>
+	<div class="widget ContactForm" id="ContactForm1">
+	<div class="contact-form-widget">
+	<div class="form">
+	<form name="contact-form">
+	<i class="fa fa-user"></i> Name: <input class="contact-form-name" id="ContactForm1_contact-form-name" name="name" size="30" type="text" value="" />
+	        <br />
+	<br />
+	<i class="fa fa-envelope-o"></i> E-mail:<input class="contact-form-email" id="ContactForm1_contact-form-email" name="email" size="30" type="text" value="" />
+	        <br />
+	<br />
+	<i class="fa fa-pencil-square-o"></i> Message:
+	<textarea class="contact-form-email-message" cols="25" id="ContactForm1_contact-form-email-message" name="email-message" rows="5"></textarea><br />
+	<input class="contact-form-button contact-form-button-submit fa-user" id="ContactForm1_contact-form-submit" type="button" value="Submit" />
+	        <br />
+	<div class="contact-form-error-message" id="ContactForm1_contact-form-error-message">
+	</div>
+	<div class="contact-form-success-message" id="ContactForm1_contact-form-success-message">
+	</div>
+	<br /></form>
+	</div>
+</div>
+</div>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="baris">
+			<div class="footer1">
+				<h3>Terima Kasih Telah Berkunjung di Web Kami!</h3>
+			</div>
+			<div class="footer2">
+				<img src="img/MT.png">
+			</div>
+		</div>
+		<hr>
+		<p class="cr">Copyright 2021 - Mobiltronik Jakarta</p>
+	</div>
+</div>
+
+<!-- toggle menu -->
+<script>
+	var menuitem = document.getElementById("menuitem");
+
+	menuitem.style.maxHeight = "0px";
+
+	function menutoggle()
+	{
+		if(menuitem.style.maxHeight == "0px")
+		{
+		  menuitem.style.maxHeight = "200px"
+		}
+		else
+		{
+			menuitem.style.maxHeight = "0px"
+		}
+	}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Detail | Mobiltronik</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body> 
+	<div class="container">
+	<div class="navbar">
+		<div class="logo">
+			<img src="img/MT.png" width="175px">
+		</div>
+		<nav>
+			<ul id="menuitem">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li class="active"><a href="about.html">About Us</a></li>
+				<li class="active"><a href="produk.html">Product</a></li>
+				<li class="active"><a href="order.html">How To Order</a></li>
+				<li class="active"><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<img src="img/cart.png" width="30px" height="30px">
+		<img src="img/bar.png" class="menu" onclick="menutoggle()">
+	</div>	
+	</div>
+
+<!-- Detail -->
+
+	<div class="kotkec sp">
+		<div class="baris">
+			<div class="kolom-2">
+				<img src="img/Barang/Produk/b1.png" width="100%">
+
+			</div>
+			<div class="kolom-2">
+				<p>Home / OEM</p>
+				<h1>HEADUNIT OEM CRV</h1>
+				<h4>$50.00</h4>
+				<input type="number" value="1"> 
+				<a href="" class="btn">Add To Cart</a>
+				<h3> Product Details <i class="fa fa-indent"></i></h3>
+<br><p>* Android Auto / Apple  car play<br> 
+* Ram 4 GB / Rom 32 GB<br>
+* Ips Screen /Capacitive Touch<br>
+* Built In Wifi<br>
+* Android Phone Link<br>
+* Video Input HDMI<br>
+* Media : Audio,Image,Video,Text<br>
+* Dsp support 16 segment <br>
+* Bluetooth 5.0<br>
+* Chipset PX - 6<br>
+* Android 9.1<br>
+* 50 Watt x 4 <br>
+</p>
+			</div>
+		</div>
+	</div>
+
+<!-- footer -->
+<div class="footer">
+	<div class="container detail">
+		<div class="baris">
+			<div class="footer1">
+				<h3>Terima Kasih Telah Berkunjung di Web Kami!</h3>
+			</div>
+			<div class="footer2">
+				<img src="img/MT.png">
+			</div>
+		</div>
+		<hr>
+		<p class="cr">Copyright 2021 - Mobiltronik Jakarta</p>
+	</div>
+</div>
+
+<!-- toggle menu -->
+<script>
+	var menuitem = document.getElementById("menuitem");
+
+	menuitem.style.maxHeight = "0px";
+
+	function menutoggle()
+	{
+		if(menuitem.style.maxHeight == "0px")
+		{
+		  menuitem.style.maxHeight = "200px"
+		}
+		else
+		{
+			menuitem.style.maxHeight = "0px"
+		}
+	}
+</script>
+
+</body>
+</html>
